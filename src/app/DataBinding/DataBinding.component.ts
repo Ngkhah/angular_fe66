@@ -61,7 +61,7 @@ import { Component, OnInit } from '@angular/core';
                 </div>
                 
 
-                <button (click)="changeName(inputFullname.value)">Submit</button>
+                <button class="btn btn-success" (click)="changeName(inputFullname.value)">Submit</button>
 
                 <h5>Email: {{email}}</h5>
                 <h5>Full name: {{fullname}}</h5>
