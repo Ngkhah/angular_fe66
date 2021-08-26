@@ -126,7 +126,26 @@ import { Component, OnInit } from '@angular/core';
         <h3 class="text-center">Bài tập 6 (QLSP)</h3>
 
         <app-baitap6></app-baitap6>
-        
+        <hr>
+
+        <div style="margin-bottom: 500px; height: 500px;">
+            <h3>Directive Antd</h3>
+            <button nz-button nzType="primary">
+                <i nz-icon nzType="poweroff"></i>Click me
+            </button><br>
+            <button nz-button nzType="primary" nzSize="large" nzShape="round">
+      <i nz-icon nzType="download"></i>
+      Download
+    </button>
+        </div>
+
+        <div style="margin-bottom: 500px; height: 500px;">
+            <h3>Directive Me</h3>
+            <button mat-raised-button color="accent">Accent</button><br>
+            <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+        </div>
 
     `
 })

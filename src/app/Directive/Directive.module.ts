@@ -1,3 +1,4 @@
+import { MaterialModule } from './../_core/Shared/Material/Material.module';
 import { BaiTapQLSPComponent } from './BaiTap6.component';
 import { BaiTapLoginComponent } from './BaiTap5.component';
 import { FormsModule } from '@angular/forms';
@@ -10,7 +11,7 @@ import { AntdModule } from '../_core/Shared/Antd/Antd.module';
 
 @NgModule({
     declarations: [DirectiveComponent,BaiTapLoginComponent,BaiTapQLSPComponent],//điền component vào
-    imports: [CommonModule,FormsModule,AntdModule],//import commonmodule de su dung directive
+    imports: [CommonModule,FormsModule,AntdModule,MaterialModule],//import commonmodule de su dung directive
     exports: [DirectiveComponent,BaiTapLoginComponent,BaiTapQLSPComponent],//điền component vào
 })
 export class DirectiveModule { }

@@ -1,3 +1,4 @@
+import { PropsModule } from './Props/Props.module';
 import { DirectiveModule } from './Directive/Directive.module';
 import { DataBindingModule } from './DataBinding/DataBinding.module';
 import { LayoutFooterComponent } from './bai-tap-layout/layout-footer/layout-footer.component';
@@ -18,7 +19,7 @@ import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 registerLocaleData(en);
 
@@ -29,7 +30,7 @@ registerLocaleData(en);
     DemoComponent // các component trong module này (mỗi component sinh ra phải ở trong module)
   ],
   imports: [
-    BrowserModule,BaiTapLayoutModule,DataBindingModule,DirectiveModule, FormsModule, HttpClientModule, BrowserAnimationsModule// nơi chèn module khác vào
+    BrowserModule,BaiTapLayoutModule,DataBindingModule,DirectiveModule, FormsModule, HttpClientModule, PropsModule// nơi chèn module khác vào
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],// nơi chèn sever khác vào
   bootstrap: [AppComponent]// các component có thề sử dụng duoc95u trong file index.html
