@@ -1,3 +1,4 @@
+import { QuanTriGheModule } from './DatVeXe/QuanTriGhe/QuanTriGhe.module';
 import { PropsModule } from './Props/Props.module';
 import { DirectiveModule } from './Directive/Directive.module';
 import { DataBindingModule } from './DataBinding/DataBinding.module';
@@ -30,7 +31,7 @@ registerLocaleData(en);
     DemoComponent // các component trong module này (mỗi component sinh ra phải ở trong module)
   ],
   imports: [
-    BrowserModule,BaiTapLayoutModule,DataBindingModule,DirectiveModule, FormsModule, HttpClientModule, PropsModule// nơi chèn module khác vào
+    BrowserModule,BaiTapLayoutModule,DataBindingModule,DirectiveModule, FormsModule, HttpClientModule, PropsModule,QuanTriGheModule// nơi chèn module khác vào
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],// nơi chèn sever khác vào
   bootstrap: [AppComponent]// các component có thề sử dụng duoc95u trong file index.html

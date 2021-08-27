@@ -1,0 +1,14 @@
+button {
+    width: 30px;
+    height: 40px;
+    // padding: 15px 10px;
+}
+
+:focus {
+    outline: 0px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+
+.ghechon {
+    background-color: red;
+}

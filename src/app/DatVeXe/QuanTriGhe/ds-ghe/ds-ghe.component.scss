@@ -1,0 +1,20 @@
+.taixe {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    background-color: antiquewhite;
+    color: rgb(82, 60, 60);
+}
+
+:focus {
+    outline: 0px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+
+.line {
+    border-right: 1px solid #dadbdc;
+}
+
+.giaghe {
+    padding-left: 25%;
+}
